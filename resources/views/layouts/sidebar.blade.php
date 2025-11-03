@@ -22,15 +22,14 @@
           </a>
         </li>
 
-        <!-- Articles -->
-        <li class="nav-item">
-          <a href="{{ route('articles') }}" 
-             class="nav-link {{ request()->routeIs('articles') ? 'active' : '' }}">
-            <i class="nav-icon fas fa-th"></i>
-            <p>Articles</p>
+        <!-- Settings -->
+         <li class="nav-item">
+          <a href="{{ route('settings') }}" 
+             class="nav-link {{ request()->routeIs('settings') ? 'active' : '' }}">
+            <i class="nav-icon fas fa-cog"></i>
+            <p>Settings</p>
           </a>
         </li>
-
       </ul>
     </nav>
     <!-- /.sidebar-menu -->

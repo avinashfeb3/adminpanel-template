@@ -1,11 +1,10 @@
 <?php
-
-use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\ResetPasswordController;
+use App\Http\Controllers\SettingsController;
 
 // Show login as first page
 Route::get('/', [LoginController::class, 'showLoginForm']);
@@ -32,4 +31,4 @@ Route::get('/dashboard', function () {
 
 
 // Other Routes
-Route::get('/articles', [ArticleController::class, 'index'])->name('articles');
+Route::get('/settings', [SettingsController::class, 'index'])->name('settings');
